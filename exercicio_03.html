@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO_03</title>
+</head>
+<body>
+    <H1>QUAL É MENOR</H1>
+    <p>ESCOLHA DOIS NUMEROS E O MENOR VAI APARECER PRIMEIRO E DEPOIS O SEGUNDO</p>
+    <SCript>
+        let num1 = prompt("Digite o primeiro número: ")
+        let num2 = prompt("Digite o segundo número: ")
+
+        if(num1<num2){
+            while(num1 <= num2){
+                console.log("A sequencia é: " + num1)
+                num1++
+            }
+        }else{
+            while(num2 <= num1){
+                console.log("A sequencia é: " + num2)
+                num2++
+            }
+        }
+    </SCript>
+</body>
+</html>
