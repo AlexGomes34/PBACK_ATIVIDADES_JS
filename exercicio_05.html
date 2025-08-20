@@ -6,14 +6,27 @@
     <title>EXERCICIO_5</title>
 </head>
 <body>
-    <h1>TABUADA DIVERTIDA</h1>
-    <p>DIGITE UM NUMERO PARA SABER SUA TABUADA</p>
+    <h1>TABUADA TRISTE</h1>
+    <p>DIGITE UM NUMERO PARA CRIAR UMA TABUADA AUTOMATICA</p>
+    <INput type="text" id="numero" placeholder="DIGITAR O NUMERO"></INput>
+    <button onclick="calcularTabuada()">CARCULAR</button>
+    <div id="tabela"></div>
     <script>
-        let num = prompt("Digite um número: ")
+        //let num = prompt("Digite um número: ")
+        function calcularTabuada(){
+        const num = document.getElementById('numero')
+        const valor = num.value
+        
+        
 
         for(i = 0; i <= 10; i++){
-        let resp = num * i
-        console.log(`${num} X ${i} = ${resp}`)
+        let resp = valor * i
+        let conta = document.createElement('p')
+        console.log(`${valor} X ${i} = ${resp} `)
+        conta.textContent = `${valor} X ${i} = ${resp}`
+        //tabuada = document.createTextNode(`${valor} X ${i} = ${resp} //`)
+        tabela.appendChild(conta)
+        }
         }
     </script>
 </body>
